@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: f5af5a5407bb9de4da9cc6cf0be9669c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Ruido: {fileID: 2800000, guid: 4c3e580055f665d4184813c64dbf0ee5, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

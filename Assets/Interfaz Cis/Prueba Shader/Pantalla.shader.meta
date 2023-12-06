@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6f3ad785bb89dc0448762beed9f9ffb9
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _6: {fileID: 2800000, guid: 89442caf8a49ced4dbbb3566553de5ca, type: 3}
+  - _5: {fileID: 2800000, guid: 7ae704ac3162c6545ac1b11f02680a8b, type: 3}
+  - _4: {fileID: 2800000, guid: 9500f99fc05e13e4ca07fd77adb65f12, type: 3}
+  - _3: {fileID: 2800000, guid: c6724ad69cc3be14d8fab4724e614619, type: 3}
+  - _2: {fileID: 2800000, guid: 9136af3b1445f9e4f9bbf46c80339fa6, type: 3}
+  - _1: {fileID: 2800000, guid: 3619dcbb5349cb145945bf7448cfde8b, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
