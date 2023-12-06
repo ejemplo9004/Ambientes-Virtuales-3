@@ -5,27 +5,36 @@ using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class EfectoBoton : MonoBehaviour
 {
     public float cambioEscala;
+    public bool tieneMalla = true;
+    [ConditionalHide("tieneMalla", true)]
     public Material materialNormal;
+    [ConditionalHide("tieneMalla", true)]
     public Material materialActivo;
     public AudioClip audioSobre;
     public AudioClip audioPresion;
     Vector3 escalaInicial;
     Vector3 escalaFinal;
     AudioSource sonido;
+    [ConditionalHide("tieneMalla", true)]
     public MeshRenderer malla;
     public InputActionProperty triggerControl;
     public bool mouseSobre;
     public UnityEvent eventoActivar;
     bool presionado;
-    public KeyCode codigo;
     public bool actibable;
+    [ConditionalHide("actibable", true)]
+    public KeyCode codigo;
 
     public bool tieneImagen;
+    [ConditionalHide("tieneImagen", true)]
     public Image imagen;
+    [ConditionalHide("tieneImagen", true)]
     public Sprite imNormal;
+    [ConditionalHide("tieneImagen", true)]
     public Sprite imActivo;
 
 
@@ -57,11 +66,11 @@ public class EfectoBoton : MonoBehaviour
         {
             sonido.clip = audioSobre;
             sonido.Play();
-            malla.material = materialActivo;
+            if (tieneMalla) malla.material = materialActivo;
         }
         else
         {
-            malla.material = materialNormal;
+            if (tieneMalla) malla.material = materialNormal;
         }
     }
 

@@ -7256,7 +7256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509744445}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b4df9f9af815b24ca970d488a5e9bbd, type: 3}
   m_Name: 
@@ -13432,6 +13432,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5072129120392427384, guid: 0f885383e987b3341a6c73fa05455038,
         type: 3}
+      propertyPath: codigo
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072129120392427384, guid: 0f885383e987b3341a6c73fa05455038,
+        type: 3}
+      propertyPath: actibable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072129120392427384, guid: 0f885383e987b3341a6c73fa05455038,
+        type: 3}
+      propertyPath: tieneMalla
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072129120392427384, guid: 0f885383e987b3341a6c73fa05455038,
+        type: 3}
+      propertyPath: tieneImagen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072129120392427384, guid: 0f885383e987b3341a6c73fa05455038,
+        type: 3}
+      propertyPath: triggerControl.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072129120392427384, guid: 0f885383e987b3341a6c73fa05455038,
+        type: 3}
       propertyPath: eventoActivar.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
       objectReference: {fileID: 0}
@@ -15490,8 +15515,8 @@ GameObject:
   - component: {fileID: 828875316}
   - component: {fileID: 828875315}
   - component: {fileID: 828875317}
-  - component: {fileID: 828875318}
   - component: {fileID: 828875319}
+  - component: {fileID: 828875320}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Player
@@ -15594,7 +15619,7 @@ MonoBehaviour:
   m_TurnAmount: 45
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
-  m_EnableTurnAround: 1
+  m_EnableTurnAround: 0
   m_DelayTime: 0
   m_LeftHandSnapTurnAction:
     m_UseReference: 1
@@ -15677,20 +15702,6 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 0}
   m_MinHeight: 0
   m_MaxHeight: Infinity
---- !u!114 &828875318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 828875308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 828875314}
-  m_DelayTime: 0
 --- !u!114 &828875319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15708,6 +15719,50 @@ MonoBehaviour:
   manoDeVR: {fileID: 149258649}
   animDerecha: {fileID: 1335336632}
   animIzquierda: {fileID: 584188358}
+--- !u!114 &828875320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828875308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 828875314}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 0
+  m_EnableFly: 0
+  m_UseGravity: 1
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 235459c8-cbb2-43b0-a8a2-0a45f70f750a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  m_RightHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: fd1e7859-392d-41a6-bc08-619b9436a5ef
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!1 &830119068
 GameObject:
   m_ObjectHideFlags: 0
