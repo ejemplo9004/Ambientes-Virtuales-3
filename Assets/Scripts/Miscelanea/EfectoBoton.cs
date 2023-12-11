@@ -36,8 +36,10 @@ public class EfectoBoton : MonoBehaviour
     public Sprite imNormal;
     [ConditionalHide("tieneImagen", true)]
     public Sprite imActivo;
+    public bool activarConTrigger = false;
+    public bool desactivarInteraccionBoton = false;
 
-
+    float tiempoActivar;
 
     void Start()
     {
@@ -76,15 +78,11 @@ public class EfectoBoton : MonoBehaviour
 
     private void Update()
     {
-        if (mouseSobre)
+        if (mouseSobre && !desactivarInteraccionBoton)
         {
             if (triggerControl.action.ReadValue<float>()>0.8f && !presionado)
             {
-                presionado = true;
-                eventoActivar.Invoke();
-                sonido.clip = audioPresion;
-                sonido.Play();
-                transform.localScale = escalaInicial;
+                Activar();
             }
             else if (triggerControl.action.ReadValue<float>() < 0.2f && presionado)
             {
@@ -97,4 +95,42 @@ public class EfectoBoton : MonoBehaviour
             eventoActivar.Invoke();
         }
     }
+
+    public void Activar()
+	{
+        presionado = true;
+        eventoActivar.Invoke();
+        sonido.clip = audioPresion;
+        sonido.Play();
+        transform.localScale = escalaInicial;
+    }
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (activarConTrigger && other.CompareTag("Mano") && tiempoActivar < Time.time)
+		{
+            Activar();
+            tiempoActivar = Time.time+1;
+		}
+	}
+
+	private void OnMouseDown()
+	{
+        Activar();
+    }
+    private void OnMouseUp()
+    {
+        presionado = false;
+        transform.localScale = escalaFinal;
+    }
+
+	private void OnMouseEnter()
+	{
+        AumentarEscala(true);
+	}
+
+	private void OnMouseExit()
+	{
+        AumentarEscala(false);
+	}
 }
