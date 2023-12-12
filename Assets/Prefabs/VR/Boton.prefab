@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 2779900035054266909}
   - component: {fileID: 7365104310041296554}
   - component: {fileID: 5072129120392427384}
+  - component: {fileID: 1875685571998039590}
   - component: {fileID: 5303562126248935540}
   m_Layer: 0
   m_Name: Boton
@@ -329,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cambioEscala: 1.1
+  tieneMalla: 1
   materialNormal: {fileID: 2100000, guid: bcf98c0f2dff53b40bd3b2e77e8f4e69, type: 2}
   materialActivo: {fileID: 2100000, guid: 46aa4f545361ddc4b934cff5c83e7a91, type: 2}
   audioSobre: {fileID: 8300000, guid: eb5ca36ef5be7c94dbc04201c8b108f4, type: 3}
@@ -363,6 +365,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  actibable: 0
+  codigo: 0
+  tieneImagen: 0
+  imagen: {fileID: 0}
+  imNormal: {fileID: 0}
+  imActivo: {fileID: 0}
+  activarConTrigger: 0
+  desactivarInteraccionBoton: 0
+--- !u!114 &1875685571998039590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318817696445867530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5cb98293507ec45b61a9e7d79c7533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entrada: []
 --- !u!114 &5303562126248935540
 MonoBehaviour:
   m_ObjectHideFlags: 0
