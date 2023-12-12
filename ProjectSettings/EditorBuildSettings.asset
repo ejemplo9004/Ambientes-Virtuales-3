@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 0e94c70542d19f44cb53beb4d4580c11
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/Menu2.unity
     guid: 66afce0ad5105874d9b19675fbfc04ec
   - enabled: 1
     path: Assets/Scenes/CIS.unity
@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Personalizacion.unity
     guid: 6254dd469959a8243bdf77b54442169e
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 8eb506dfe563ab346822ce00e8c0b29c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 658b5da58a1eeaa40a8de799c996b768,
       type: 2}
