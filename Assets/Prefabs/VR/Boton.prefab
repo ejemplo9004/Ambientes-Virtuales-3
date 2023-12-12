@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 2779900035054266909}
   - component: {fileID: 7365104310041296554}
   - component: {fileID: 5072129120392427384}
+  - component: {fileID: 1875685571998039590}
   - component: {fileID: 5303562126248935540}
   m_Layer: 0
   m_Name: Boton
