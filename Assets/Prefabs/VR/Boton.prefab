@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cambioEscala: 1.1
+  tieneMalla: 1
   materialNormal: {fileID: 2100000, guid: bcf98c0f2dff53b40bd3b2e77e8f4e69, type: 2}
   materialActivo: {fileID: 2100000, guid: 46aa4f545361ddc4b934cff5c83e7a91, type: 2}
   audioSobre: {fileID: 8300000, guid: eb5ca36ef5be7c94dbc04201c8b108f4, type: 3}
@@ -363,6 +364,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  actibable: 0
+  codigo: 0
+  tieneImagen: 0
+  imagen: {fileID: 0}
+  imNormal: {fileID: 0}
+  imActivo: {fileID: 0}
+  activarConTrigger: 0
+  desactivarInteraccionBoton: 0
 --- !u!114 &5303562126248935540
 MonoBehaviour:
   m_ObjectHideFlags: 0
