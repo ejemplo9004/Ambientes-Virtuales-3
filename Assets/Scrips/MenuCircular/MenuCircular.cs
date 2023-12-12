@@ -55,7 +55,7 @@ public class MenuCircular : MonoBehaviour
 		rotAnterior = rotSiguiente;
     }
 
-	private void OnDrawGizmos()
+	private void OnDrawGizmosSelected()
 	{
 		if (objetos.Length > 0)
 		{

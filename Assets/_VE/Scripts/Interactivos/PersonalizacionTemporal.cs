@@ -16,7 +16,6 @@ public class PersonalizacionTemporal : MonoBehaviour
     public Image imColor1;
     public Image imColor2;
 
-
     void Start()
     {
         cuerpoActual = -1;
@@ -25,7 +24,6 @@ public class PersonalizacionTemporal : MonoBehaviour
         CambiarCuerpo();
         AplicarColores();
     }
-
 
     [ContextMenu("Cambiar Cuerpo")]
     public void CambiarCuerpo()
@@ -52,14 +50,28 @@ public class PersonalizacionTemporal : MonoBehaviour
         AplicarColores();
     }
 
+    [ContextMenu("Anterior color 1")]
+    public void AnteriorColor1()
+    {
+        color1 = (color1 + 9) % 10;
+        PlayerPrefs.SetInt("color1", color1);
+        AplicarColores();
+    }
+    [ContextMenu("Anterior color 2")]
+    public void AnteriorColor2()
+    {
+        color2 = (color2 + 9) % 10;
+        PlayerPrefs.SetInt("color2", color2);
+        AplicarColores();
+    }
     public void AplicarColores()
     {
         for (int i = 0; i < materiales.Count; i++)
         {
             materiales[i].SetColor("_ColorPrincipal", colores.Evaluate(color1));
             materiales[i].SetColor("_ColorSecundario", colores.Evaluate(color2));
-        imColor2.color = colores.Evaluate(color2);
-        imColor1.color = colores.Evaluate(color1);
+            imColor2.color = colores.Evaluate(color2);
+            imColor1.color = colores.Evaluate(color1);
         }
 
     }
