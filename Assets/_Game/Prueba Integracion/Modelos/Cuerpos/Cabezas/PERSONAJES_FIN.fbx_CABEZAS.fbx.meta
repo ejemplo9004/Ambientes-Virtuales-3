@@ -3,7 +3,17 @@ guid: c8fa98c43da4200418959c468b968284
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SKN_F
+    second: {fileID: 2100000, guid: 080a65e5bef0c1d42b85b2cda5b47938, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SKN_M
+    second: {fileID: 2100000, guid: 52be55525c67e08449ba8752a3a1cb77, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

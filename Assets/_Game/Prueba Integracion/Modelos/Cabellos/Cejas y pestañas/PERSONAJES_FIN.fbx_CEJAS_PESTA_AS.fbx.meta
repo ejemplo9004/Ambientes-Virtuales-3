@@ -3,7 +3,17 @@ guid: 12f1c2f322938cc4495656972611f4e6
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FRR_01
+    second: {fileID: 2100000, guid: 592ff0de4f790ea4cbd73613cdbfac5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FRR_02
+    second: {fileID: 2100000, guid: 6723519ff82106e48ad481773a2933d6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

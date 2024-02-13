@@ -1,9 +1,69 @@
 fileFormatVersion: 2
-guid: 0277e59abaaeb074ca9cc21a3db10bf5
+guid: a42db31b94c460c4f8f3813399a75478
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SKN_F
+    second: {fileID: 2100000, guid: 080a65e5bef0c1d42b85b2cda5b47938, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SKN_M
+    second: {fileID: 2100000, guid: 52be55525c67e08449ba8752a3a1cb77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_01
+    second: {fileID: 2100000, guid: 6ff611c65e2f7ca4ab92ab9adc8d191e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_02
+    second: {fileID: 2100000, guid: 43432524b61699740b95d73e82925b96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_03
+    second: {fileID: 2100000, guid: bead14a4226261d4ab82f9a10e5cff61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_04
+    second: {fileID: 2100000, guid: f0ee72a2bd42b5046a1b89e64e1c6313, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_05
+    second: {fileID: 2100000, guid: c840ad73b9a3f9e4c87eb66642ed480c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_06
+    second: {fileID: 2100000, guid: 017d5a7763f2dda428b7a7a9cdfd3eda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_07
+    second: {fileID: 2100000, guid: 2133825de4d96fa4aa335c9af2a20fcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_08
+    second: {fileID: 2100000, guid: 5d23455cfcbd52f4db986084c86e8ce0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_09
+    second: {fileID: 2100000, guid: 5da3d1c03e1a01941a9d648e06562c89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TPR_10
+    second: {fileID: 2100000, guid: a51d794b3833db14e9f29399b7798f00, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
