@@ -54,7 +54,7 @@ public class InterfazPreguntas : MonoBehaviour
 
                 yield return new WaitForSeconds(0.5f);
 
-                // Activar objetos en Entrada y escalar a su tamaño original
+                // Activar objetos en Entrada y escalar a su tamaï¿½o original
                 for (int i = 0; i < entrada.Length; i++)
                 {
                     yield return new WaitForSeconds(0.2f);
@@ -66,7 +66,7 @@ public class InterfazPreguntas : MonoBehaviour
 
             IEnumerator EscalarObjeto(Transform objetoTransform, Vector3 escalaFinal)
             {
-                float duracion = 0.2f; // Duración de la transición
+                float duracion = 0.2f; // Duraciï¿½n de la transiciï¿½n
 
                 Vector3 escalaInicial = objetoTransform.localScale;
                 float tiempoPasado = 0f;
